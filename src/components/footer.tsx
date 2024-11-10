@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Route } from 'next';
 
 export function Footer() {
   return (
@@ -15,12 +16,12 @@ export function Footer() {
             <h3 className="font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/privacy" className="text-gray-600 hover:text-gray-900">
+                <Link href={'/privacy' as Route} className="text-gray-600 hover:text-gray-900">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-gray-600 hover:text-gray-900">
+                <Link href={'/terms' as Route} className="text-gray-600 hover:text-gray-900">
                   Terms of Service
                 </Link>
               </li>
